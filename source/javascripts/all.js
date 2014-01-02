@@ -1,2 +1,2 @@
-require ./jquery
-require ./navigation
+//= require ./jquery
+//= require ./navigation
