@@ -12,10 +12,28 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
 
     <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag  "jquery" %>
   </head>
 
   <body class="<%= page_classes %>">
+    <div class="page" id="page1">
+      <button type="button" id="show-next">Select</button>
+      <br>
+      <button type="button" id="show-next">Input</button>
+    </div>
+
+    <div class="page" id="page2">
+      <select>
+        <option>One</option>
+        <option>Two</option>
+        <option>Three</option>
+      </select>
+      <br>
+      <input type="text">
+    </div>
+
+    <div class="stupid-overlay"></div>
+
     <%= yield %>
   </body>
 </html>
